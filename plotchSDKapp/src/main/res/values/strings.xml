@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">Plotch SDK</string>
+    <string name="common.permission.settings">Settings</string>
+    <string name="common.permission.button_ok">Ok</string>
+    <string name="text_common_loading">Loading...</string>
+    <string name="something_went_wrong">Something went wrong please try again !</string>
+    <string name="server_issue">Server issue detected , Please try again latter.</string>
+    <string name="no_internet">No internet connection detected</string>
+    <string name="ok">Ok</string>
+    <string name="similar_product_name">Similar Product</string>
+    <string name="similar_product_reg_price">Rs 1200</string>
+    <string name="similar_product_off_price">Rs 2400</string>
+    <string name="similar_product_save">save 50 %</string>
+    <string name="content_description">Content description</string>
+    <string name="myaccount.shipment.expected_delivery">Expected delivery</string>
+    <string name="choose_a_reason_for_cancellation">Choose a reason for cancellation</string>
+    <string name="payment.success.order_placed">Your order has been placed successfully.</string>
+    <string name="checkout.order_success.expected_delivery">Expected Delivery</string>
+    <string name="checkout.order_success.payment_mode">Payment Mode</string>
+    <string name="checkout.order_success.cancel_order">CANCEL ORDER\\nCancel anytime before\\nitem is shipped.</string>
+    <string name="checkout.order_success.track_order">Track Your Order</string>
+
+
+    <string name="firstName">First name</string>
+    <string name="lastName">Last name</string>
+    <string name="fullAddress">Address</string>
+    <string name="mobileNumber">Mobile number</string>
+    <string name="save_address">Save Address</string>
+    <string name="cancel">Cancle</string>
+    <string name="cart_text_size">Size -</string>
+    <string name="cart_text_color">Color -</string>
+    <string name="cart_text_qty">Qty :</string>
+    <string name="cart_text_order_summery">ORDER SUMMERY</string>
+    <string name="cart_text_sub_total">Sub Total</string>
+    <string name="cart_coupon_applied">Coupon Applied (</string>
+    <string name="cart_you_save">You saved </string>
+    <string name="cart_text_shipping">Shipping</string>
+    <string name="cart_text_out_of_stock">Out of stock</string>
+    <string name="cart_text_total_payable">Total payable</string>
+    <string name="cart_btn_proceed_to_checkout">Proceed to Checkout</string>
+    <string name="cart_text_total">Total</string>
+
+    <string name="shipping">Shipping</string>
+    <string name="coupon_discount">Discount</string>
+    <string name="total_payable">Total Payable</string>
+    <string name="taxes">Taxes</string>
+    <string name="pincode">Pincode</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="checkout.place_order">Place Order</string>
+    <string name="close">Close</string>
+    <string name="edit_address">Edit Address</string>
+    <string name="filter_product_view">Products</string>
+    <string name="opps_seems_like_you_don_t_have_any_recent_searches">Oops you dont have any recent search</string>
+
+    <string name="login_or_sign_up_to"><b>Login</b> or <b>Sign up</b> to</string>
+    <string name="hi_emptor">Namaste !</string>
+    <string name="tell_us_something_about_yourself_before_we_continue">Login/Register to <b>Unlock</b> amazing ethnic deals.</string>
+    <string name="Get_Started_Instantly">Get Started Instantly</string>
+    <string name="accept_privacy_terms">By taping <b>Proceed Button</b> you agree to our <b>Terms &amp; Condition</b> and <b>Privacy Policy</b></string>
+
+
+    <string name="bot_api">https://bot.plotch.ai</string>
+    <string name="bot_api_external">http://api.plotch.ai</string>
+    <!--        <string name="bot_api">http://bot-uat.plotch.ai</string>-->
+    <!--        <string name="bot_api_external">http://api-uat.plotch.ai</string>-->
+
+
+</resources>

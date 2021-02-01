@@ -1,0 +1,33 @@
+{
+  "HomePage": [
+    {
+      "trackerName": "HomePage_SearchBar",
+      "title": "Easily search using keywords for anything you want!",
+      "id": 1
+    }
+  ],
+  "ProductListing": [
+    {
+      "trackerName": "ProductListing_Filter",
+      "title": "Use filters to narrow down from thousands of products based on your preferences.",
+      "id": 2
+    },
+    {
+      "trackerName": "ProductListing_SimilarButton",
+      "title": "Explore Similar Styles",
+      "id": 3
+    },
+    {
+      "trackerName": "ProductListing_SwitchProductView",
+      "title": "Switch between single product or multiple products view.",
+      "id": 4
+    }
+  ],
+  "PDP": [
+    {
+      "trackerName": "PDP_InfoButton",
+      "title": "Quickly find item's information like color, fabric, style etc here!",
+      "id": 5
+    }
+  ]
+}

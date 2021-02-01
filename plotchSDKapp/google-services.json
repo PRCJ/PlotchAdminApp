@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "165722760913",
+    "firebase_url": "https://plotch-sdk.firebaseio.com",
+    "project_id": "plotch-sdk",
+    "storage_bucket": "plotch-sdk.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:165722760913:android:28214f6704ce114eeb47f0",
+        "android_client_info": {
+          "package_name": "com.plotch.sdk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "165722760913-an19mb1lcvkevij74giaor32tad7tvs7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.plotch.sdk",
+            "certificate_hash": "ec9ec98c62c4c85ce667692852a8ebbb5a0aab4b"
+          }
+        },
+        {
+          "client_id": "165722760913-2minat4dqoq8sevkpmsudb93qpv25vqc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAolBjUwxo__YuVjE-_rVX5N7Mnz9anQ7s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "165722760913-2minat4dqoq8sevkpmsudb93qpv25vqc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

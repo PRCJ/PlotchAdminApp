@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/crafts_toolbar_style"
+    android:paddingStart="@dimen/dimen_16dp"
+    android:paddingLeft="@dimen/dimen_16dp"
+    app:elevation="0dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+
+        <com.plotch.sdk.ChatBotService.view_element.ProximaNovaTextViewRegular
+            android:id="@+id/single_toolbar_tiltle_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:alpha="0.87"
+            android:text="@string/edit_address"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/dimen_16sp" />
+
+
+        <com.plotch.sdk.ChatBotService.view_element.ProximaNovaTextViewBold
+            android:id="@+id/filter_product_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="120  "
+            android:textColor="@color/filter_product_color"
+            android:textSize="@dimen/dimen_12sp"
+            android:visibility="visible"
+
+            />
+
+
+        <com.plotch.sdk.ChatBotService.view_element.ProximaNovaTextViewRegular
+            android:id="@+id/mTextViewProducts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/filter_product_view"
+            android:layout_toRightOf="@id/filter_product_view"
+            android:text="@string/filter_product_view"
+            android:textColor="@color/filter_product_color"
+            android:textSize="@dimen/dimen_12sp"
+            android:visibility="visible" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/mCrossEditAddressImageView"
+            style="@style/SelectableItemBackground"
+            android:layout_width="@dimen/dimen_35dp"
+            android:layout_height="@dimen/dimen_35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:alpha="0.54"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dimen_10dp"
+            app:srcCompat="@drawable/cross" />
+    </RelativeLayout>
+</androidx.appcompat.widget.Toolbar>

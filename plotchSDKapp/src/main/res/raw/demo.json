@@ -1,0 +1,196 @@
+{
+  "s": 1,
+  "m": "Chatbot Response",
+  "d": {
+    "statements": [],
+    "data": {
+      "addressList": [
+        {
+          "city": "Cuttack",
+          "countryId": "IN",
+          "firstname": "Sai Jay",
+          "addressId": "525997",
+          "mobile": "8850914885",
+          "lastname": "",
+          "region": "ODISHA",
+          "regionId": "",
+          "customerId": "47389",
+          "street": "4456,6, The Courier Details Of The Proposal Is",
+          "postcode": 753004,
+          "countryPhoneCode": "+91"
+        },
+        {
+          "city": "Mumbai",
+          "countryId": "IN",
+          "firstname": "Sai Jayant",
+          "addressId": "74207",
+          "mobile": "8850914885",
+          "lastname": "",
+          "region": "Maharashtra",
+          "regionId": "",
+          "customerId": "47389",
+          "street": "504 caspion, sagarcity, mumbai",
+          "postcode": 400058,
+          "countryPhoneCode": "+91"
+        },
+        {
+          "city": "Mumbai",
+          "countryId": "IN",
+          "firstname": "The Crazy Channel",
+          "addressId": "538259",
+          "mobile": "8850914885",
+          "lastname": "",
+          "region": "MAHARASHTRA",
+          "regionId": "",
+          "customerId": "47389",
+          "street": "Caspio,Yyyu The Courier Details Of The Proposal",
+          "postcode": 400058,
+          "countryPhoneCode": "+91"
+        },
+        {
+          "city": "Mumbai",
+          "countryId": "IN",
+          "firstname": "Sai Jayant",
+          "addressId": "46765",
+          "mobile": "8850914885",
+          "lastname": "",
+          "region": "Maharashtra",
+          "regionId": "",
+          "customerId": "47389",
+          "street": "Caspion 504, Sagarcity,Tipu sulatan marg ,andheri west,Mumbai",
+          "postcode": 400058,
+          "countryPhoneCode": "+91"
+        },
+        {
+          "city": "Shimla",
+          "countryId": "IN",
+          "firstname": "Test User",
+          "addressId": "178671",
+          "mobile": "8850914885",
+          "lastname": "",
+          "region": "Himachal Pradesh",
+          "regionId": "",
+          "customerId": "47389",
+          "street": "Please dot place order if found this address",
+          "postcode": 171226,
+          "countryPhoneCode": "+91"
+        },
+        {
+          "city": "Jammu",
+          "countryId": "IN",
+          "firstname": "Test Test user",
+          "addressId": "152407",
+          "mobile": "8850914885",
+          "lastname": "",
+          "region": "JAMMU & KASHMIR",
+          "regionId": "",
+          "customerId": "47389",
+          "street": "plotno 6253, please dont place order when you found thus address.",
+          "postcode": 180001,
+          "countryPhoneCode": "+91"
+        },
+        {
+          "city": "Mumbai",
+          "countryId": "IN",
+          "firstname": "The Crazy Channel",
+          "addressId": "538305",
+          "mobile": "8850914885",
+          "lastname": "",
+          "region": "MAHARASHTRA",
+          "regionId": "",
+          "customerId": "47389",
+          "street": "Ty For The Rush Hour On The Daily Show Up",
+          "postcode": 400058,
+          "countryPhoneCode": "+91"
+        }
+      ],
+      "walletInformation": {
+        "coinsUsed": 0,
+        "moneyUsed": 0,
+        "totalWalletAmount": 0,
+        "isWalletBalanceUsed": "true",
+        "totalUsableWalletAmount": 0
+      },
+      "cartDetails": {
+        "coupon": {
+          "couponDiscount": 0,
+          "couponMessage": "",
+          "couponCode": ""
+        },
+        "products": [
+          {
+            "tax": 30,
+            "shippingcost": 99,
+            "qty": 1,
+            "gstValue": 0,
+            "productUrl": "",
+            "vendorDetails": {
+              "vendorId": "36666",
+              "vendorPincode": "",
+              "vendorCod": 1,
+              "vendorName": null
+            },
+            "entityId": "6248757",
+            "size": "FS",
+            "category": "SARI",
+            "ean": "8000000003224",
+            "tp": 380.0,
+            "categoryId": 12,
+            "imgUrl": "/C/V/CV-36666-MTITH57648734330-1593269180-Craftsvilla_1.jpg",
+            "productId": 6248757,
+            "isInStock": 1,
+            "sku": "MTITH57648734330",
+            "tags": [],
+            "hsn": "52085920",
+            "productName": "Red Printed Lycra Blend Saree With Blouse Piece",
+            "variants": {
+              "color": [
+                "Red"
+              ],
+              "size": [
+                "FS"
+              ]
+            },
+            "isCod": 1,
+            "regularPrice": 1267.0,
+            "discountPercentage": 0,
+            "discountedPrice": 647,
+            "promotion": {},
+            "discountAmount": 620.0
+          }
+        ],
+        "displayMsg": "",
+        "orderSummary": {
+          "totalPayable": 746.0,
+          "couponDiscount": 0,
+          "itemsCount": 1,
+          "totalWithoutTax": 716.0,
+          "discount": 0,
+          "tax": 30,
+          "displayTotal": "746",
+          "shippingCost": 99,
+          "itemsQty": 1,
+          "totalPaybleAfterWalletDeduct": 746.0,
+          "total": 746.0,
+          "subTotal": 617.0,
+          "vat": 0
+        },
+        "customerId": "7986198"
+      }
+    },
+    "options": [
+      {
+        "statementEnglish": "Go Back",
+        "tag": "back",
+        "optionId": 1,
+        "statementHindi": "\u0935\u093e\u092a\u0938 \u091c\u093e\u090f"
+      },
+      {
+        "statementEnglish": "End Conversation",
+        "tag": "exit",
+        "optionId": 2,
+        "statementHindi": "\u092c\u093e\u0924\u091a\u0940\u0924 \u0938\u092e\u093e\u092a\u094d\u0924 \u0915\u0930\u0947"
+      }
+    ]
+  }
+}

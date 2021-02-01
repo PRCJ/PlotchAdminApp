@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/back"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center|top"
+    android:layout_margin="@dimen/dimen_4dp"
+    android:background="@drawable/option_background"
+    android:elevation="@dimen/dimen_1dp"
+    android:gravity="left"
+    android:paddingLeft="@dimen/dimen_12dp"
+    android:paddingTop="@dimen/_6dp"
+    android:paddingRight="@dimen/dimen_12dp"
+    android:paddingBottom="@dimen/_6dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginRight="@dimen/dimen_3dp"
+        android:background="@drawable/circle_reply"
+        android:gravity="center"
+        android:padding="@dimen/dimen_5dp"
+        android:textColor="#fff"
+        android:textSize="@dimen/dimen_11sp"
+        app:srcCompat="@drawable/chat_back_15dp" />
+
+    <com.plotch.sdk.ChatBotService.view_element.ProximaNovaTextViewRegular
+        android:id="@+id/chips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Order Related Issue"
+        android:textColor="@color/grey_40"
+        android:textSize="@dimen/dimen_15sp" />
+</LinearLayout>

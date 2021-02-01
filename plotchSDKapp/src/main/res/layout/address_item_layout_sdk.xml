@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen_2dp"
+    android:background="@drawable/card_background"
+    android:weightSum="10"
+    app:cardElevation="@dimen/dimen_0dp"
+
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/address_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="10"
+
+        >
+
+        <FrameLayout
+            android:id="@+id/image_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_first"
+                android:layout_width="@dimen/dimen_100dp"
+                android:layout_height="@dimen/dimen_80dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:background="@color/grey_background"
+                android:minHeight="@dimen/dimen_50dp"
+                android:orientation="vertical"
+                android:scaleType="fitXY"
+                android:visibility="gone" />
+
+
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:id="@+id/bottom_actions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toLeftOf="@+id/navigate"
+            android:layout_toRightOf="@+id/image_back"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <com.plotch.sdk.ChatBotService.view_element.ProximaNovaTextViewBold
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:paddingBottom="@dimen/dimen_1dp"
+                android:textColor="@color/black_70"
+                android:textSize="@dimen/dimen_12sp"
+                tools:text="Craftsvilla Orange Color" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.plotch.sdk.ChatBotService.view_element.ProximaNovaTextViewRegular
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_50dp"
+                    android:layout_marginBottom="@dimen/dimen_4dp"
+                    android:gravity="center_vertical"
+                    android:maxLines="2"
+                    android:minLines="2"
+                    android:textColor="@color/grey_40"
+                    android:textSize="@dimen/dimen_11sp"
+                    tools:text="F-15, First Floor, Phoenix Marketcity, LBS Road, Kurla (W), Mumbai. Maharashtra - 400070" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layCall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/dimen_2dp"
+                android:paddingBottom="@dimen/dimen_2dp">
+
+
+                <com.plotch.sdk.ChatBotService.view_element.ProximaNovaTextViewBold
+                    android:id="@+id/mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:text="Contact us on  0172-4579010"
+                    android:textColor="@color/black_54"
+                    android:textSize="@dimen/dimen_11sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:id="@+id/navigate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/rightArrow">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgAddress"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dimen_10dp"
+                android:alpha="0.5"
+                android:padding="@dimen/dimen_8dp"
+                app:srcCompat="@drawable/home_return_circle_tick_black" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/rightArrow"
+            android:layout_width="@dimen/dimen_4dp"
+            android:layout_height="@dimen/dimen_4dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+        <ImageView
+            android:id="@+id/bootom_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/bottom_actions"
+            android:layout_marginLeft="@dimen/dimen_25dp"
+            android:layout_marginRight="@dimen/dimen_25dp"
+            android:background="#00CFCFCF"
+            android:paddingLeft="@dimen/dimen_25dp"
+            android:paddingRight="@dimen/dimen_25dp" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
+
+

@@ -1,0 +1,1148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_background"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="@dimen/toolbar_height"
+        app:title="">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/mImageViewBackButton"
+                style="@style/SelectableItemBackground"
+                android:layout_width="@dimen/dimen_30dp"
+                android:layout_height="@dimen/dimen_30dp"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/dimen_8dp"
+                app:srcCompat="@drawable/drawable_arrow_back"
+                tools:ignore="VectorDrawableCompat" />
+
+            <com.plotch.sdk.ChatBotService.view_element.ProximaNovaTextViewBold
+                android:id="@+id/mTextViewToolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/mImageViewToolbarSearch"
+                android:layout_alignRight="@+id/mImageViewToolbarSearch"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dimen_10dp"
+                android:layout_marginLeft="@dimen/dimen_30dp"
+                android:layout_marginRight="@dimen/dimen_10dp"
+                android:layout_toEndOf="@id/mImageViewBackButton"
+                android:layout_toRightOf="@id/mImageViewBackButton"
+                android:maxLines="1"
+                android:text="Help &amp; Support Chat "
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/dimen_16sp" />
+
+            <RelativeLayout
+                android:id="@+id/lang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/mTextViewToolbarTitle">
+
+                <com.plotch.sdk.ChatBotService.view_element.ProximaNovaTextViewBold
+                    android:id="@+id/language_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:layout_toLeftOf="@id/langu"
+                    android:maxLines="1"
+                    android:text="English"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/dimen_12sp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/langu"
+                    style="@style/SelectableItemBackground"
+                    android:layout_width="@dimen/dimen_30dp"
+                    android:layout_height="@dimen/dimen_30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_15dp"
+                    android:alpha="0.8"
+                    app:srcCompat="@drawable/hind_translate_logo" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/text_back"
+        android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/dimen_1dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/chatList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_40dp"
+                android:background="@color/grey_background" />
+
+            <RelativeLayout
+                android:id="@+id/upDown_lay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chatList"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-30dp">
+
+                <com.plotch.sdk.ChatBotService.view_element.ProximaNovaTextViewRegular
+                    android:id="@+id/up_down_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:maxLines="1"
+                    android:textColor="@color/grey_40"
+                    android:textSize="@dimen/dimen_13sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/up_down_text"
+                    android:background="@color/grey_background">
+
+                    <ImageView
+
+                        android:id="@+id/upDown"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_uploading" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_proceed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/upDown_lay"
+                android:gravity="top"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/optionProducts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_8dp"
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    android:layout_marginRight="@dimen/_8dp"
+                    android:layout_marginBottom="@dimen/_8dp"
+                    android:background="@color/grey_background"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/productList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/dimen_10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/walletView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_8dp"
+                    android:layout_marginTop="@dimen/_8dp"
+                    android:layout_marginRight="@dimen/_8dp"
+                    android:layout_marginBottom="@dimen/_8dp"
+                    android:background="@color/grey_background"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/headerCardEnable"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/dimen_8dp"
+                        android:layout_marginTop="@dimen/dimen_4dp"
+                        android:layout_marginRight="@dimen/dimen_8dp"
+                        android:layout_marginBottom="@dimen/dimen_1dp"
+                        android:background="@drawable/border_grey"
+                        android:orientation="vertical"
+                        android:padding="@dimen/dimen_4dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="6dp"
+                            android:orientation="horizontal">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/walletIcon"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                android:gravity="center_vertical"
+                                app:srcCompat="@drawable/ic_wallet_grayout" />
+
+                            <com.plotch.sdk.ChatBotService.view_element.ProximaNovaTextViewRegular
+                                android:id="@+id/walletTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_8dp"
+                                android:layout_marginRight="@dimen/dimen_15dp"
+                                android:layout_toRightOf="@id/walletIcon"
+                                android:text="Total Wallet balance"
+                                android:textColor="#929292"
+                                android:textSize="@dimen/dimen_13sp"
+                                android:visibility="visible" />
+
+                            <com.plotch.sdk.ChatBotService.view_element.ProximaNovaTextViewBold
+                                android:id="@+id/total_wallet_balance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:text="₹ 2,000"
+                                android:textColor="@color/grey_40"
+                                android:textSize="@dimen/dimen_12sp"
+                                android:visibility="visible" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_margin="@dimen/dimen_4dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <RelativeLayout
+                                android:id="@+id/money_back_enable"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/laytoolBar"
+                                android:layout_gravity="center"
+                                android:layout_margin="3dp"
+                                android:layout_weight="1"
+                                android:background="@color/craftsvilla_money_bac"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/moneyIcon"
+                                    android:layout_width="@dimen/dimen_25dp"
+                                    android:layout_height="@dimen/dimen_30dp"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="8dp"
+                                    android:gravity="center_vertical"
+                                    app:srcCompat="@drawable/ic_craftsvilla_rupee" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/laytoolBar"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="4dp"
+                                    android:layout_toRightOf="@+id/moneyIcon"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_below="@+id/laytoolBar"
+                                        android:layout_gravity="left"
+                                        android:orientation="horizontal">
+
+                                        <com.plotch.sdk.ChatBotService.view_element.ProximaNovaTextViewBold
+                                            android:id="@+id/craftsvilla_money"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="₹1,0000"
+                                            android:textColor="@color/money_color"
+                                            android:textSize="@dimen/dimen_11sp"
+                                            android:visibility="visible" />
+
+                                    </LinearLayout>
+
+                                    <com.plotch.sdk.ChatBotService.view_element.ProximaNovaTextViewRegular
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginTop="3dp"
+                                        android:text="Craftsvilla Money"
+                                        android:textColor="@color/filter_product_color"
+                                        android:textSize="@dimen/dimen_10sp"
+                                        android:visibility="visible" />
+                                </LinearLayout>
+
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/coin_back_enable"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/laytoolBar"
+                                android:layout_gravity="center"
+                                android:layout_margin="3dp"
+                                android:layout_weight="1"
+                                android:background="@color/craftsvilla_coin_backgroud"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/coinIcon"
+                                    android:layout_width="@dimen/dimen_25dp"
+                                    android:layout_height="@dimen/dimen_25dp"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="8dp"
+                                    android:gravity="center_vertical"
+                                    app:srcCompat="@drawable/ic_craftsvilla_coins" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="4dp"
+                                    android:layout_toRightOf="@+id/coinIcon"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_below="@+id/laytoolBar"
+                                        android:layout_gravity="left"
+                                        android:orientation="horizontal">
+
+                                        <com.plotch.sdk.ChatBotService.view_element.ProximaNovaTextViewBold
+                                            android:id="@+id/craftsvilla_coin"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerHorizontal="true"
+                                            android:layout_centerVertical="true"
+                                            android:text="₹ 1,000"
+                                            android:textColor="@color/coin_color"
+                                            android:textSize="@dimen/dimen_11sp"
+                                            android:visibility="visible" />
+
+                                    </LinearLayout>
+
+                                    <com.plotch.sdk.ChatBotService.view_element.ProximaNovaTextViewRegular
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginTop="3dp"
+                                        android:text="Craftsvilla Coin"
+                                        android:textColor="@color/filter_product_color"
+                                        android:textSize="@dimen/dimen_10sp"
+                                        android:visibility="visible" />
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/laytoolBar"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="4dp"
+                            android:orientation="vertical"
+                            android:weightSum="2">
+
+                            <com.plotch.sdk.ChatBotService.view_element.ProximaNovaTextViewRegular
+                                android:id="@+id/coin_instruction_"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Transaction List shown below"
+                                android:textColor="@color/grey_40"
+                                android:textSize="@dimen/dimen_10sp"
+                                android:visibility="visible" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/walletTransactionlist"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/dimen_4dp" />
+
+                            <com.plotch.sdk.ChatBotService.view_element.ProximaNovaTextViewRegular
+                                android:id="@+id/ok"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="right"
+                                android:layout_margin="@dimen/dimen_8dp"
+                                android:background="@drawable/green_ouline"
+                                android:gravity="center"
+                                android:padding="@dimen/_8dp"
+                                android:text=" Exit Window "
+                                android:textColor="@color/green"
+                                android:textSize="14sp"
+                                android:visibility="visible" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tracking_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_6dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:background="@drawable/card_background"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/_8dp"
+                            android:paddingRight="@dimen/_8dp">
+
+                            <com.plotch.sdk.ChatBotService.view_element.ProximaNovaTextViewRegular
+                                android:id="@+id/titel"
+                                style="@style/widgetTitleStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:gravity="center"
+                                android:text="Your order status" />
+
+                            <com.plotch.sdk.ChatBotService.view_element.CraftsvillaButton
+                                android:id="@+id/cancle_window"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/dimen_27dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginLeft="@dimen/dimen_5dp"
+                                android:layout_marginTop="@dimen/_5dp"
+                                android:layout_marginRight="@dimen/dimen_5dp"
+                                android:layout_marginBottom="@dimen/_5dp"
+                                android:background="@drawable/border_black_12"
+                                android:elevation="@dimen/dimen_0dp"
+                                android:text="@string/close"
+                                android:textColor="@color/grey_40"
+                                android:textSize="@dimen/font_tiny_12"
+                                android:visibility="gone" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/orderLay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dimen_8dp"
+                                android:layout_marginRight="@dimen/dimen_8dp"
+                                android:background="@color/grey_background"
+                                android:orientation="horizontal">
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/product_image"
+                                    android:layout_width="@dimen/dimen_75dp"
+                                    android:layout_height="@dimen/dimen_85dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="@dimen/dimen_2dp"
+                                    android:contentDescription="@string/content_description"
+                                    android:gravity="center"
+                                    android:padding="@dimen/dimen_4dp"
+                                    app:srcCompat="@drawable/ic_placeholder" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="@dimen/dimen_12dp"
+                                    android:layout_marginRight="@dimen/dimen_12dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="left"
+                                        android:layout_marginTop="@dimen/dimen_4dp"
+                                        android:gravity="center|bottom"
+                                        android:orientation="horizontal">
+
+
+                                        <com.plotch.sdk.ChatBotService.view_element.ProximaNovaTextViewRegular
+                                            android:id="@+id/product_name_titel"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginRight="@dimen/dimen_4dp"
+                                            android:textColor="@color/grey_40"
+                                            android:textSize="@dimen/dimen_12sp" />
+
+                                        <com.plotch.sdk.ChatBotService.view_element.ProximaNovaTextViewBold
+                                            android:id="@+id/product_name"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="@color/black_70"
+                                            android:textSize="@dimen/dimen_12sp" />
+                                    </LinearLayout>
+
+
+                                    <com.plotch.sdk.ChatBotService.view_element.ProximaNovaTextViewRegular
+                                        android:id="@+id/expected_delivery_title"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/dimen_4dp"
+                                        android:text="@string/myaccount.shipment.expected_delivery"
+                                        android:textColor="@color/grey_40"
+                                        android:textSize="@dimen/dimen_12sp" />
+
+
+                                    <com.plotch.sdk.ChatBotService.view_element.ProximaNovaTextViewRegular
+                                        android:id="@+id/order_id"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/dimen_4dp"
+                                        android:textColor="@color/grey_40"
+                                        android:textSize="@dimen/dimen_12sp"
+                                        android:visibility="gone" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="left"
+                                        android:layout_marginTop="@dimen/dimen_4dp"
+                                        android:gravity="center|bottom"
+                                        android:orientation="horizontal">
+
+                                        <com.plotch.sdk.ChatBotService.view_element.ProximaNovaTextViewRegular
+                                            android:id="@+id/price_titel"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginRight="@dimen/dimen_4dp"
+                                            android:textColor="@color/grey_40"
+                                            android:textSize="@dimen/dimen_12sp" />
+
+                                        <com.plotch.sdk.ChatBotService.view_element.ProximaNovaTextViewBold
+                                            android:id="@+id/price_amount"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="@color/black_70"
+                                            android:textSize="@dimen/dimen_12sp" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_8dp"
+                            android:layout_marginTop="@dimen/dimen_2dp"
+                            android:layout_marginRight="@dimen/dimen_8dp"
+                            android:background="@color/grey_background"
+                            android:orientation="vertical"
+                            android:padding="@dimen/dimen_1dp">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:paddingLeft="@dimen/dimen_4dp"
+                                android:paddingTop="@dimen/dimen_4dp"
+                                android:paddingRight="@dimen/dimen_4dp"
+                                android:paddingBottom="@dimen/dimen_4dp">
+
+                                <com.plotch.sdk.ChatBotService.view_element.ProximaNovaTextViewRegular
+                                    android:id="@+id/shipment_summary"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:textColor="@color/grey_40"
+                                    android:textSize="@dimen/dimen_12sp" />
+
+                                <com.plotch.sdk.ChatBotService.view_element.ProximaNovaTextViewRegular
+                                    android:id="@+id/shipment_summary1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:textColor="@color/grey_40"
+                                    android:textSize="@dimen/dimen_12sp" />
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+
+                            android:id="@+id/track_lay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_8dp"
+                            android:layout_marginTop="@dimen/dimen_2dp"
+                            android:layout_marginRight="@dimen/dimen_8dp"
+                            android:layout_marginBottom="@dimen/dimen_20dp"
+                            android:background="@color/grey_background"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/dimen_4dp"
+                            android:paddingRight="@dimen/dimen_4dp"
+                            android:paddingBottom="6dp"
+                            android:weightSum="5">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/tracker_requested"
+                                    android:layout_width="@dimen/dimen_40dp"
+                                    android:layout_height="@dimen/dimen_40dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="@dimen/dimen_4dp"
+                                    android:visibility="invisible"
+                                    app:srcCompat="@drawable/approve" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                    <View
+                                        android:id="@+id/view_requested_left"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="2dp"
+                                        android:layout_centerVertical="true"
+                                        android:layout_toLeftOf="@+id/image_circle_requested"
+                                        android:background="#B1B1B1"
+                                        android:visibility="invisible" />
+
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:id="@+id/image_circle_requested"
+                                        android:layout_width="15dp"
+                                        android:layout_height="15dp"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginTop="0dp"
+                                        app:srcCompat="@drawable/circle_border" />
+
+                                    <View
+                                        android:id="@+id/view_requested_right"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="2dp"
+                                        android:layout_centerVertical="true"
+                                        android:layout_toRightOf="@+id/image_circle_requested"
+                                        android:background="#B1B1B1" />
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:id="@+id/requested_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/regular"
+                                    android:maxLines="1"
+                                    android:padding="@dimen/dimen_4dp"
+                                    android:text="Confirmed"
+                                    android:textColor="@color/black_54"
+                                    android:textSize="@dimen/font_atomic" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/tracker_approved"
+                                    android:layout_width="@dimen/dimen_40dp"
+                                    android:layout_height="@dimen/dimen_40dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="@dimen/dimen_4dp"
+                                    android:visibility="invisible"
+
+                                    app:srcCompat="@drawable/overflow" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                    <View
+                                        android:id="@+id/view_approved_left"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="2dp"
+                                        android:layout_centerVertical="true"
+                                        android:layout_toLeftOf="@+id/image_circle_approved"
+                                        android:background="#B1B1B1" />
+
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:id="@+id/image_circle_approved"
+                                        android:layout_width="15dp"
+                                        android:layout_height="15dp"
+                                        android:layout_centerHorizontal="true"
+                                        app:srcCompat="@drawable/circle_border" />
+
+                                    <View
+                                        android:id="@+id/view_approved_right"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="2dp"
+                                        android:layout_centerVertical="true"
+                                        android:layout_toRightOf="@+id/image_circle_approved"
+                                        android:background="#B1B1B1" />
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:id="@+id/approved_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/regular"
+                                    android:maxLines="1"
+                                    android:padding="@dimen/dimen_4dp"
+                                    android:text="Processing"
+                                    android:textColor="@color/black_54"
+                                    android:textSize="@dimen/font_atomic" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/tracker_shipped"
+                                    android:layout_width="@dimen/dimen_40dp"
+                                    android:layout_height="@dimen/dimen_40dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="@dimen/dimen_4dp"
+                                    android:visibility="invisible"
+                                    app:srcCompat="@drawable/delivery_truck" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                    <View
+                                        android:id="@+id/view_shipped_left"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="2dp"
+                                        android:layout_centerVertical="true"
+                                        android:layout_toLeftOf="@+id/image_circle_shipped"
+                                        android:background="#B1B1B1" />
+
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:id="@+id/image_circle_shipped"
+                                        android:layout_width="15dp"
+                                        android:layout_height="15dp"
+                                        android:layout_centerHorizontal="true"
+                                        app:srcCompat="@drawable/circle_border" />
+
+                                    <View
+                                        android:id="@+id/view_shipped_right"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="2dp"
+                                        android:layout_centerVertical="true"
+                                        android:layout_toRightOf="@+id/image_circle_shipped"
+                                        android:background="#B1B1B1" />
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:id="@+id/shipped_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/regular"
+                                    android:maxLines="1"
+                                    android:padding="@dimen/dimen_4dp"
+                                    android:text="Shipped"
+                                    android:textColor="@color/black_54"
+                                    android:textSize="@dimen/font_atomic" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/tracker_delivered"
+                                    android:layout_width="@dimen/dimen_40dp"
+                                    android:layout_height="@dimen/dimen_40dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="@dimen/dimen_4dp"
+                                    android:visibility="invisible"
+                                    app:srcCompat="@drawable/delivery_man" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                    <View
+                                        android:id="@+id/view_delivered_left"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="2dp"
+                                        android:layout_centerVertical="true"
+                                        android:layout_toLeftOf="@+id/image_circle_delivered"
+                                        android:background="#B1B1B1" />
+
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:id="@+id/image_circle_delivered"
+                                        android:layout_width="15dp"
+                                        android:layout_height="15dp"
+                                        android:layout_centerHorizontal="true"
+                                        app:srcCompat="@drawable/circle_border" />
+
+                                    <View
+                                        android:id="@+id/view_delivered_right"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="2dp"
+                                        android:layout_centerVertical="true"
+                                        android:layout_toRightOf="@+id/image_circle_delivered"
+                                        android:background="#B1B1B1"
+                                        android:visibility="gone" />
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:id="@+id/approve_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/regular"
+                                    android:maxLines="1"
+                                    android:padding="@dimen/dimen_4dp"
+                                    android:text="Delivered"
+                                    android:textColor="@color/black_54"
+                                    android:textSize="@dimen/font_atomic" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/return_layout"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/tracker_returned"
+                                    android:layout_width="@dimen/dimen_40dp"
+                                    android:layout_height="@dimen/dimen_40dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="@dimen/dimen_4dp"
+                                    android:visibility="invisible"
+                                    app:srcCompat="@drawable/return_icon" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                    <View
+                                        android:id="@+id/view_returned_left"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="2dp"
+                                        android:layout_centerVertical="true"
+                                        android:layout_toLeftOf="@+id/image_circle_returned"
+                                        android:background="@color/red" />
+
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:id="@+id/image_circle_returned"
+                                        android:layout_width="15dp"
+                                        android:layout_height="15dp"
+                                        android:layout_centerHorizontal="true"
+                                        app:srcCompat="@drawable/circle_red" />
+
+                                    <View
+                                        android:id="@+id/view_returned_right"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="2dp"
+                                        android:layout_centerVertical="true"
+                                        android:layout_toRightOf="@+id/image_circle_returned"
+                                        android:background="#B1B1B1"
+                                        android:visibility="invisible" />
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:id="@+id/returned_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/regular"
+
+                                    android:maxLines="1"
+                                    android:padding="@dimen/dimen_4dp"
+                                    android:text="Returned"
+                                    android:textColor="@color/red"
+                                    android:textSize="@dimen/font_atomic" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <com.plotch.sdk.ChatBotService.view_element.ProximaNovaTextViewRegular
+                            android:id="@+id/latest_update_summary"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/shipment_summary"
+                            android:gravity="center"
+                            android:lineSpacingMultiplier="1.3"
+                            android:paddingLeft="@dimen/dimen_12dp"
+                            android:paddingTop="@dimen/dimen_5dp"
+                            android:paddingRight="@dimen/dimen_12dp"
+                            android:paddingBottom="@dimen/dimen_8dp"
+                            android:textColor="@color/coin_color"
+                            android:textSize="@dimen/dimen_12sp"
+                            android:visibility="gone" />
+
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/order_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cancel_reason_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="@dimen/_8dp"
+                    android:layout_marginTop="@dimen/_8dp"
+                    android:layout_marginRight="@dimen/_8dp"
+                    android:background="@color/grey_background"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <com.plotch.sdk.ChatBotService.view_element.ProximaNovaTextViewRegular
+                        android:id="@+id/cancle_titel"
+                        style="@style/widgetTitleStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="@string/choose_a_reason_for_cancellation" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/cancel_reason_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingBottom="4dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/optionChips"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="@dimen/_8dp"
+                    android:layout_marginTop="@dimen/_8dp"
+                    android:layout_marginRight="@dimen/_8dp"
+                    android:layout_marginBottom="@dimen/_8dp"
+                    android:background="@color/grey_background"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/chipList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingBottom="4dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:id="@+id/loadingBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/dimen_30dp">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lotiView2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/dimen_4dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/loading2" />
+
+        <com.plotch.sdk.ChatBotService.view_element.ProximaNovaTextViewBold
+            android:id="@+id/loadingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lotiView2"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/dimen_4dp"
+            android:layout_marginLeft="@dimen/_8dp"
+            android:gravity="center"
+            android:text="Setting up your virtual assistant, Please wait..."
+            android:textColor="@color/text_gray_deep"
+            android:textSize="@dimen/font_atomic" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/notFoundBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/dimen_30dp">
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lotiView3"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/dimen_4dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/animation_404" />
+
+        <com.plotch.sdk.ChatBotService.view_element.ProximaNovaTextViewBold
+            android:id="@+id/notFoundText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lotiView3"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/dimen_4dp"
+            android:layout_marginLeft="@dimen/_8dp"
+            android:gravity="center"
+            android:text="Error with setting up your vitual assistant."
+            android:textColor="@color/text_gray_deep"
+            android:textSize="@dimen/font_atomic" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/text_back"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+
+        <com.plotch.sdk.ChatBotService.view_element.CraftsEditTextRegular
+            android:id="@+id/enter_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/apply"
+            android:background="@null"
+            android:hint=" Search product / Enter your query "
+            android:inputType="textCapSentences"
+            android:padding="@dimen/dimen_10dp"
+            android:textColorHint="#B3B2B2"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="@dimen/dimen_16sp" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/apply"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="@color/grey_p"
+            android:drawablePadding="@dimen/dimen_4dp"
+            android:inputType="textCapSentences"
+            android:paddingLeft="@dimen/dimen_20dp"
+            android:paddingTop="@dimen/dimen_18dp"
+            android:paddingRight="@dimen/dimen_20dp"
+            android:paddingBottom="@dimen/dimen_18dp"
+            android:textColor="@color/white"
+            app:srcCompat="@drawable/ic_send_black_24dp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

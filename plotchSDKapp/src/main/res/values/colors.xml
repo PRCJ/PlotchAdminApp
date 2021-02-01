@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="color_gray">#8a000000</color>
+    <color name="color_button">#6da40e</color>
+    <color name="color_white">#ffffff</color>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorDebugPrimary">#4CAF50</color>
+    <color name="colorDebugPrimaryDark">#388E3C</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#448aff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="item_not_delivery_color">#ff1744</color>
+    <color name="common_color_toolbar">#a73e54</color>
+    <color name="address_proceed_payment">#6da40e</color>
+    <color name="button_text">#ffffff</color>
+    <color name="white">#FFFFFF</color>
+    <color name="green_light">#F7FDF7</color>
+    <color name="sendANote">#286A9B</color>
+    <color name="teal_color">#009688</color>
+
+    <color name="color_1a000000">#1a000000</color>
+    <color name="color_transparent">#00000000</color>
+
+    <color name="color_7e7e7e">#7e7e7e</color>
+    <color name="color_72c319">#72c319</color>
+    <color name="color_8a000000">#8a000000</color>
+    <color name="color_6e6e6e">#4c6e6e6e</color>
+    <color name="color_12000000">#12000000</color>
+    <color name="color_606060">#606060</color>
+    <color name="color_99000000">#99000000</color>
+    <color name="translusecnt">#56000000</color>
+    <!--OLD GREEN COLOR-->
+    <!--<color name="colorGreen">#6da40e</color>
+    <color name="colorDarkGreen">#466A07</color>-->
+
+    <color name="color_971937">#971937</color>
+    <color name="colorCompany">#981937</color>
+    <color name="colorGreen">#cb224a</color>
+    <color name="colorDarkGreen">#971937</color>
+
+
+    <!--    <color name="colorDarkGreen">#FFFFFF</color>-->
+
+    <color name="color_d9d9d9">#d9d9d9</color>
+    <color name="smokyBlack">#d9d9d9</color>
+
+    <!--FOR LINE COLOR OF CHECKOUT FLOW-->
+    <color name="color_light_grey">#1f000000</color>
+    <color name="color_dark_grey">#6d6d6d</color>
+    <color name="black_54">#8a000000</color>
+    <color name="black_solid_54">#888888</color>
+    <color name="black_70">#af000000</color>
+    <color name="black_87">#df000000</color>
+
+    <!--BUTTON COLOR OLD APP-->
+    <color name="color_a73e54">#a73e54</color>
+    <color name="color_981936">#d81b6f</color>
+
+    <color name="color_">#f2f2f2</color>
+    <color name="color_dc4e41">#dc4e41</color>
+    <color name="color_3c5a99">#3c5a99</color>
+    <color name="color_ff001f">#ff001f</color>
+    <color name="color_outofstocknotify">#e36969</color>
+    <color name="color_d81b60">#d81b60</color>
+    <color name="color_cccccc">#cccccc</color>
+
+
+    <color name="filter_product_color">#8a000000</color>
+
+    <color name="color_buttoncolor">#d81b60</color>
+    <color name="color_buttoncolor1">#d81b6f</color>
+
+    <color name="button_filter_color">#d81b60</color>
+    <color name="filter_divider">#e0e0e0</color>
+    <color name="color_c8c8c8">#c8c8c8</color>
+    <color name="color_cacaca">#cacaca</color>
+    <color name="color_1f000000">#1f000000</color>
+    <color name="color_f5f5f5">#f5f5f5</color>
+    <color name="color_fbfbfb">#fbfbfb</color>
+    <color name="color_dd3d6b">#dd3d6b</color>
+    <color name="color_de000000">#de000000</color>
+    <color name="color_E0E0E0">#E0E0E0</color>
+    <color name="color_0d000000">#0d000000</color>
+    <color name="color_8c000000">#8c000000</color>
+    <color name="color_cb1540">#cb1540</color>
+    <color name="color_8e8e93">#8e8e93</color>
+    <color name="color_c7c7c7">#c7c7c7</color>
+    <color name="color_f46165">#f46165</color>
+    <color name="color_3d8b8b8b">#3d8b8b8b</color>
+    <color name="color_222222">#222222</color>
+    <color name="color_f8f8f8">#f8f8f8</color>
+    <color name="color_536dfe">#536dfe</color>
+    <color name="color_57000000">#57000000</color>
+    <color name="color_4a4a4a">#4a4a4a</color>
+    <color name="color_4a90e2">#4a90e2</color>
+    <color name="color_F0F0F0">#F0F0F0</color>
+    <color name="color_33000000">#33000000</color>
+    <color name="color_979797">#979797</color>
+    <color name="color_fef0d7">#fef0d7</color>
+    <color name="color_e0e0e0">#e0e0e0</color>
+
+    <color name="color_e7e7e7">#e7e7e7</color>
+    <color name="color_888888">#888888</color>
+
+    <color name="color_e36969">#e36969</color>
+    <!--    <color name="color_home_tool">#971937</color>-->
+    <color name="color_home_tool">#FFFFFF</color>
+    <color name="color_448aff">#448aff</color>
+    <color name="color_981937">#981937</color>
+    <color name="color_cb224a">#cb224a</color>
+    <color name="color_79142c">#79142c</color>
+    <color name="color_1D3D81">#1D3D81</color>
+    <color name="color_BC3428">#BC3428</color>
+    <color name="color_ffb843">#ffb843</color>
+    <color name="color_f2f2f2">#f2f2f2</color>
+    <color name="color_ff4242">#ff4242</color>
+    <color name="color_1e000000">#1e000000</color>
+    <color name="black_12">#1c000000</color>
+    <color name="black_20">#2c000000</color>
+    <color name="black_30">#4c000000</color>
+    <color name="color_6da40e">#6da40e</color>
+    <color name="color_2b5294">#2b5294</color>
+    <color name="color_12b0fe">#12b0fe</color>
+    <color name="color_36a40e">#36a40e</color>
+    <color name="color_D1F7C4">#D1F7C4</color>
+    <!-- The default color of the widget (label and bottom line). -->
+    <color name="widget_labelled_spinner_default">#6D6D6D</color>
+
+    <!-- The color of the divider and error text when enabled. -->
+    <color name="widget_labelled_spinner_error">#FFDD2C00</color>
+    <color name="color_f2f8ff">#f2f8ff</color>
+    <color name="color_010002">#010002</color>
+    <color name="color_14000000">#14000000</color>
+    <color name="color_de010002">#de010002</color>
+    <color name="color_3671ff">#3671ff</color>
+    <color name="color_b3000000">#b3000000</color>
+    <color name="color_dfdfdf">#dfdfdf</color>
+    <color name="color_26000000">#26000000</color>
+    <color name="color_86b3ff">#86b3ff</color>
+    <color name="color_535353">#535353</color>
+    <color name="grey_40">#919191</color>
+    <color name="grayout">#D6D6D6</color>
+    <color name="grayout_light">#E7E6E6</color>
+    <color name="yellow_900">#FFD740</color>
+    <color name="blue_highlight">#A0C4FD</color>
+    <color name="blue_ultra_highlight">#F4F7FC</color>
+    <color name="color_54000000">#54000000</color>
+    <color name="black_08">#14000000</color>
+    <color name="grey_background">#F5F5F5</color>
+    <color name="green">#4CAF50</color>
+    <color name="green_50">#504CAF50</color>
+    <color name="dark_red">#981937</color>
+    <color name="text_gray_deep">#666565</color>
+    <color name="semitransparent">#B2000000</color>
+    <color name="craftsvilla_money_bac">#EBFCEC</color>
+    <color name="craftsvilla_money_bac_">#F2FCF3</color>
+    <color name="craftsvilla_coin_backgroud">#FCF5E4</color>
+    <color name="craftsvilla_coin_backgroud_">#FAF6EE</color>
+    <color name="coin_color">#DD970A</color>
+    <color name="coin_color_">#F3CD94</color>
+    <color name="money_color">#108D15</color>
+    <color name="money_color_">#8BC78D</color>
+    <color name="defaultTextColor">#FFFFFF</color>
+    <color name="errorColor">#D50000</color>
+    <color name="infoColor">#3F51B5</color>
+    <color name="successColor">#388E3C</color>
+    <color name="warningColor">#FFA900</color>
+    <color name="normalColor">#353A3E</color>
+    <color name="superlightgreen">#F2FAF2</color>
+
+
+    <color name="transparent1">#FFFFFF</color>
+    <color name="transparent2">#EDFFFFFF</color>
+    <color name="transparent3">#DDFFFFFF</color>
+    <color name="transparent4">#D2FFFFFF</color>
+    <color name="transparent5">#C4FFFFFF</color>
+    <color name="transparent6">#B9FFFFFF</color>
+    <color name="transparent7">#ADFFFFFF</color>
+    <color name="transparent8">#9FFFFFFF</color>
+    <color name="transparent9">#90FFFFFF</color>
+    <color name="transparent10">#83FFFFFF</color>
+    <color name="transparent11">#75FFFFFF</color>
+    <color name="transparent12">#66FFFFFF</color>
+    <color name="transparent13">#56FFFFFF</color>
+    <color name="transparent14">#41FFFFFF</color>
+    <color name="transparent15">#2DFFFFFF</color>
+    <color name="transparent16">#19FFFFFF</color>
+    <color name="transparent17">#0AFFFFFF</color>
+    <color name="transparent18">#00FFFFFF</color>
+    <color name="transparent19">#05000000</color>
+    <color name="transparent20">#08000000</color>
+    <color name="transparent21">#0D000000</color>
+    <color name="transparent22">#11000000</color>
+    <color name="transparent23">#12000000</color>
+    <color name="transparent24">#19000000</color>
+    <color name="transparent25">#1D000000</color>
+    <color name="transparent26">#1E000000</color>
+    <color name="transparent27">#25000000</color>
+
+
+    <color name="gray_shade">#f6f6f6</color>
+
+    <color name="progress_primary">@color/white2</color>
+    <color name="progress_secondary">@color/gray_scale</color>
+    <color name="progress_max_active">@color/white2</color>
+
+    <color name="gray_scale">#8affffff</color>
+    <color name="white2">#fff</color>
+    <color name="orange_light">#FFFFFF</color>
+    <color name="orange">#FCA271</color>
+    <color name="deep_range">#F7942A</color>
+
+
+    Turquoise: Hex #40e0D0 | RGB 64,224,208 | CMYK 71,0,7,12 | PMS 333 C
+
+    <color name="lemon">#E2D602</color>
+    <color name="pale">#B0B843</color>
+    <color name="springgreen">#0CCE6D</color>
+    <color name="mint">#6CB67B</color>
+    <color name="pink">#D19AA4</color>
+    <color name="salmon">#ffa07a</color>
+    <color name="lavender">#9956C0</color>
+    <color name="plum">#E691E6</color>
+    <color name="lilac">#c8a2c8</color>
+    <color name="violet">#ee82ee</color>
+    <color name="skyblue">#58B8DF</color>
+    <color name="eggblue">#00cccc</color>
+    <color name="turquoise">#40e0D0</color>
+    <color name="badam">#E7B247</color>
+    <color name="sareeteal">#0BB4A4</color>
+    <color name="grey_p">#444</color>
+    <color name="grey_l">#CFCFCF</color>
+    <color name="red">#F73E3E</color>
+    <color name="teal">#48C7A3</color>
+    <color name="teal_light">#A9F5DF</color>
+
+    <array name="color_random_arrey">
+        <item>@color/lemon</item>
+        <item>@color/pale</item>
+        <item>@color/springgreen</item>
+        <item>@color/mint</item>
+        <item>@color/pink</item>
+        <item>@color/green</item>
+        <item>@color/salmon</item>
+        <item>@color/lavender</item>
+        <item>@color/plum</item>
+        <item>@color/lilac</item>
+        <item>@color/violet</item>
+        <item>@color/skyblue</item>
+        <item>@color/eggblue</item>
+        <item>@color/turquoise</item>
+        <item>@color/badam</item>
+        <item>@color/sareeteal</item>
+    </array>
+
+
+</resources>

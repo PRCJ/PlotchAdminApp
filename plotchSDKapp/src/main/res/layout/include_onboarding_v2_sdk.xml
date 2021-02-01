@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorCompany"
+    android:id="@+id/parent_layout"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.craftsvilla.app.helper.customViews.WhitenyTextViewMedium
+            android:id="@+id/mTextViewUsing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="@dimen/dimen_8dp"
+            android:text="@string/login_or_sign_up_to"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_11sp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/dimen_140dp"
+            android:layout_marginTop="4dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/companyBanner"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            app:srcCompat="@drawable/home_toolbar_icon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mLinearLayoutOnBoardingIncludeRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_12dp"
+        android:background="@drawable/card_background"
+        android:elevation="@dimen/_8dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+
+        <com.craftsvilla.app.helper.customViews.ProximaNovaTextViewBold
+            android:id="@+id/hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:paddingLeft="@dimen/dimen_2dp"
+            android:paddingTop="3dp"
+            android:text="@string/hi_emptor"
+            android:textColor="@color/grey_40"
+            android:textSize="@dimen/font_medium" />
+
+        <com.craftsvilla.app.helper.customViews.ProximaNovaTextViewRegular
+            android:id="@+id/hint2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:paddingLeft="@dimen/dimen_2dp"
+            android:paddingTop="3dp"
+
+            android:text="@string/tell_us_something_about_yourself_before_we_continue"
+            android:textColor="@color/grey_40"
+            android:textSize="@dimen/dimen_12sp" />
+
+
+        <com.craftsvilla.app.helper.customViews.CraftsEditTextRegular
+            android:id="@+id/mEdittextMobileuserOrGuestUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_marginRight="@dimen/dimen_20dp"
+            android:background="@color/color_transparent"
+            android:backgroundTint="@color/colorGreen"
+            android:digits="0123456789"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/dimen_2dp"
+            android:paddingTop="@dimen/dimen_8dp"
+            android:paddingRight="@dimen/dimen_8dp"
+            android:paddingBottom="@dimen/dimen_8dp"
+            android:textCursorDrawable="@drawable/custom_cursor" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:layout_marginRight="@dimen/dimen_20dp"
+            android:background="@color/colorGreen" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.craftsvilla.app.helper.customViews.WhitenyTextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:paddingLeft="@dimen/dimen_2dp"
+                android:paddingTop="3dp"
+                android:text="Enter your 10 digit "
+                android:textColor="@color/grey_40"
+                android:textSize="12sp" />
+
+            <com.craftsvilla.app.helper.customViews.WhitenyTextViewMedium
+                android:id="@+id/hint1"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:paddingTop="3dp"
+                android:text="Mobile"
+                android:textColor="@color/colorGreen"
+                android:textSize="12sp" />
+
+            <com.craftsvilla.app.helper.customViews.WhitenyTextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+
+                android:paddingTop="3dp"
+                android:text=" Number "
+                android:textColor="@color/grey_40"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/mButtonStartInstantlyOnboarding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mLinearLayoutOnBoardingIncludeRoot"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_8dp"
+            android:layout_marginBottom="@dimen/dimen_5dp"
+            android:background="@color/colorGreen"
+            android:src="@drawable/ic_arrow_forward_white"
+            android:text="@string/Get_Started_Instantly"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_16sp"
+            app:backgroundTint="@color/colorGreen" />
+
+        <com.craftsvilla.app.helper.customViews.ProximaNovaTextViewRegular
+            android:id="@+id/privacypolicy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mButtonStartInstantlyOnboarding"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:layout_marginRight="@dimen/dimen_20dp"
+            android:layout_marginBottom="@dimen/font_atomic_10"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dimen_2dp"
+            android:paddingTop="3dp"
+            android:text="@string/accept_privacy_terms"
+            android:textColor="@color/grey_40"
+            android:textSize="@dimen/dimen_11sp"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+</LinearLayout>

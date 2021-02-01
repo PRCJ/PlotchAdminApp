@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dimen_6dp"
+        android:paddingBottom="@dimen/dimen_6dp">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/order_status_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/order_success" />
+
+        <com.plotch.sdk.ChatBotService.view_element.ProximaNovaTextViewBold
+            android:id="@+id/order_thank_you"
+            style="@style/HorizontalMargin16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Thank you, Vikram Acharya."
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/dimen_12sp" />
+
+        <com.plotch.sdk.ChatBotService.view_element.ProximaNovaTextViewRegular
+            style="@style/HorizontalMargin16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:gravity="center_horizontal"
+            android:text="@string/payment.success.order_placed"
+            android:textColor="@color/black_54"
+            android:textSize="@dimen/dimen_11sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/dimen_6dp"
+            android:layout_marginBottom="@dimen/dimen_6dp"
+            android:background="@color/black_12" />
+
+        <com.plotch.sdk.ChatBotService.view_element.ProximaNovaTextViewRegular
+            android:id="@+id/order_number_confirmation"
+            style="@style/HorizontalMargin16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_12dp"
+            android:gravity="center_horizontal"
+            android:text="Order (No. 456683346) Confirmation is sent on
+vikram@craftsvilla.com and +91-9833933345"
+            android:textColor="@color/black_54"
+            android:textSize="@dimen/dimen_11sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_6dp"
+            android:layout_marginBottom="@dimen/dimen_12dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.plotch.sdk.ChatBotService.view_element.ProximaNovaTextViewRegular
+                    style="@style/HorizontalMargin16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/checkout.order_success.expected_delivery"
+                    android:textColor="@color/black_54"
+                    android:textSize="@dimen/dimen_11sp" />
+
+                <com.plotch.sdk.ChatBotService.view_element.ProximaNovaTextViewBold
+                    android:id="@+id/expected_date"
+                    style="@style/HorizontalMargin16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Mon, 16 july - Thu, 19 july"
+                    android:textColor="@color/black_54"
+                    android:textSize="@dimen/dimen_11sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/dimen_1dp"
+                android:layout_height="35dp"
+                android:background="@color/black_12" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.plotch.sdk.ChatBotService.view_element.ProximaNovaTextViewRegular
+                    style="@style/HorizontalMargin16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/checkout.order_success.payment_mode"
+                    android:textColor="@color/black_54"
+                    android:textSize="@dimen/dimen_11sp" />
+
+                <com.plotch.sdk.ChatBotService.view_element.ProximaNovaTextViewBold
+                    android:id="@+id/payment_mode"
+                    style="@style/HorizontalMargin16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Cash on delivery"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black_54"
+                    android:textSize="@dimen/dimen_11sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.plotch.sdk.ChatBotService.view_element.CraftsvillaButton
+            android:id="@+id/track_order"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_30dp"
+            android:layout_marginLeft="@dimen/dimen_15dp"
+            android:layout_marginRight="@dimen/dimen_15dp"
+            android:background="@drawable/button_green_default"
+            android:text="@string/checkout.order_success.track_order"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_tiny_12" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:layout_marginBottom="@dimen/dimen_6dp"
+            android:orientation="horizontal">
+
+            <com.plotch.sdk.ChatBotService.view_element.ProximaNovaTextViewRegular
+                style="@style/HorizontalMargin16"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/checkout.order_success.cancel_order"
+                android:textColor="@color/black_54"
+                android:textSize="@dimen/dimen_11sp" />
+
+
+            <View
+                android:layout_width="@dimen/dimen_1dp"
+                android:layout_height="@dimen/dimen_40dp"
+                android:background="@color/black_12" />
+
+
+            <com.plotch.sdk.ChatBotService.view_element.ProximaNovaTextViewRegular
+                style="@style/HorizontalMargin16"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="EASY RETURNS\nWe got you covered\nunder 7 day return policy."
+                android:textColor="@color/black_54"
+                android:textSize="@dimen/dimen_11sp" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/HorizontalMargin16"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:background="@drawable/line_stroked" />
+
+        <com.plotch.sdk.ChatBotService.view_element.ProximaNovaTextViewRegular
+            android:id="@+id/assistance_text"
+            style="@style/HorizontalMargin16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/headphone_wrapper"
+            android:drawablePadding="@dimen/dimen_8dp"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dimen_8dp"
+            android:text="For more assistance, visit Help Center"
+            android:textColor="@color/black_54"
+            android:textSize="@dimen/dimen_11sp" />
+
+        <View
+            style="@style/HorizontalMargin16"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:background="@drawable/line_stroked" />
+
+    </LinearLayout>
+
+</LinearLayout>

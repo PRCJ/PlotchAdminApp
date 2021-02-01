@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/backround"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center|top"
+    android:layout_margin="@dimen/dimen_4dp"
+    android:background="@drawable/green_outline_solid_back"
+    android:elevation="@dimen/dimen_1dp"
+    android:gravity="left"
+    android:paddingLeft="@dimen/dimen_10dp"
+    android:paddingTop="@dimen/_6dp"
+    android:paddingRight="@dimen/dimen_10dp"
+    android:paddingBottom="@dimen/_6dp">
+
+    <com.plotch.sdk.ChatBotService.view_element.ProximaNovaTextViewRegular
+        android:id="@+id/chips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="XS"
+        android:textColor="@color/grey_40"
+        android:textSize="@dimen/dimen_15sp" />
+</LinearLayout>
